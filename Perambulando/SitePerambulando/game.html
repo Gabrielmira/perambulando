@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PERAMBULANDO">
+    <title>PERAMBULANDO</title>
+    <!--Arquivos CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gamestyle.css">
+    <script src="js/script.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!-- Logo do site na barra de endereço do navegador -->
+    <link rel="icone" href="./images/logo.png" type="image/png" />
+    <!-- a lupa na barra de pesquisa -->
+    <script src="https://kit.fontawesome.com/15c7c4106e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+       
+        <nav class="menuSuperior">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="games.html">Quem somos</a></li>
+                <li><a href="news.html">Objetivos</a></li>
+
+                <li><a href="contact.html">Contato</a></li>
+                <li>
+                    <ul class="dropdown">
+                        <a href="#">Jogar
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/236520/arrow_down.svg"
+                                alt="Submenu open">
+                        </a>
+                        <div class="menuDropdown">
+                            <a href="game.html">Jogar</a>
+                            <a href="register.html">Cadastre-se</a>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+ <body>
+
+
+
+
+
+<div id="jogocompleto">
+ 
+ <img src="images/background.png" id="background1">
+	<img src="images/base.png" id="base">
+ 
+ <div id="numeroaleatorio"></div>
+ 
+  <div id="danoacumuladoshow"></div>
+  
+   <div id="vidaPlayer1show"></div>
+   
+   <div id="vidaPlayer2show"></div>	
+	
+   <div id="vidaBarraPlayer1"></div>
+
+   <div id="vidaBarraPlayer2"></div>
+	
+	<img src="images/logo.png" id="player1">
+	<img src="images/galo.png" id="player2">
+
+	<img src="images/miss.gif" style="visibility:hidden" id="missplayer1">
+	<img src="images/miss.gif" style="visibility:hidden" id="missplayer2">
+
+
+ 
+  <button id="rolar" onclick="rolar()">Rolar</button>
+  
+  <button id="atacar" onclick="atacar()">Atacar</button>
+
+
+
+  <div id="telaSeleção">
+
+    <img src="images/SELECT1.png" id="telaSeleçãoIMG">
+
+    <button id="escolherCaranguejo" onclick="escolheu(caranguejoArray)">ESCOLHER</button>
+    <button id="escolherGalo" onclick="escolheu(galoArray)" >ESCOLHER</button>
+    <button id="escolherTubarao" onclick="escolheu(tubaraoArray)" >ESCOLHER</button>
+
+    <!-- style="visibility:hidden" -->
+</div>
+
+<img src="images/youlose.gif" style="visibility:hidden" id="youlose" alt="">
+<img src="images/youwin.gif" style="visibility:hidden" id="youwin" alt="">
+
+
+</div>
+
+ <div id="textoTutorial">
+
+    Esse jogo funciona da seguinte forma: <br> 
+    primeiramente claro, escolha o seu personagem... não se preocupe com os outros que ainda não estão desbloqueados, você vai conseguir cada um deles. <br> <br>
+-ao clicar em <b>ROLAR</b> o seu personagem acumula dano rolando um dado de 6 lados, mostrado o valor no meio da tela. <br>
+-você pode rolar quantos dados quiser, mas cuidado, se der 1 você perde o turno e também todo o dano que acumulou. <br>
+-ao clicar em <b>ATACAR</b> você causa ao oponente todo o dano acumulado. <br>
+</div> 
+
+ </body>
+ 
+ <script>
+    //professor me perdoe, tive q fazer essa maracutaia aqui 
+    // pois não gosto de frontEnd e fiz todo o jogo antes de fazer
+    //  a pagina... ai não deu mais pra ajeitar... o zoom ficou 
+    //  muito grande, pode ver q o menu ficou muito pequeno e não 
+    //  ficou estendido na tela e pra fazer isso teria q alterar 
+    //  todas as propriedades do jogo e sempre q eu dava ou tirava
+    //   zoom ficava tudo cagado, então terminei fazendo assim.
+
+    document.body.style.zoom = "50%";
+
+//obs, não sei pq esses codigos a baixo só funcionam diretamente na pagina html
+   
+    
+
+    document.getElementById("escolherGalo").disabled = true;
+document.getElementById("escolherTubarao").disabled = true;
+
+ numeroaleatorio = document.getElementById('numeroaleatorio');
+ numeroaleatorio.innerHTML =  aleatorio
+
+
+  vidaPlayer2show = document.getElementById('vidaPlayer2show');
+    vidaPlayer2show.innerHTML =  vidaPlayer2
+ 
+
+danoacumuladoshow = document.getElementById('danoacumuladoshow');
+    danoacumuladoshow.innerHTML =  danoacumulado
+
+
+ </script>
+ <footer class="contatoA" id="contatoA">
+    <h2>Contato</h2>
+    <div class="icons">
+        <a target="_blank" title="GitHub" href="https://github.com/filipetrap">
+            <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" title="Instagram" href="https://www.instagram.com/filipetrap/">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a target="_blank" title="Linkedin" href="https://br.linkedin.com/in/filipe-trap-a37a86247">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+</footer>
+</html>

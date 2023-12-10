@@ -1,0 +1,259 @@
+#contatoA{
+    z-index: -1;
+    top: 0px;
+}
+
+#jogocompleto{
+    position: absolute;
+
+    top: 5%;
+    
+    left: 37%;
+    
+    transform: translate(-50%, -50%);
+}
+
+#contatoA{
+    position: relative;   
+    top: 590px;
+   }
+       #textoTutorial{
+           position: absolute;
+       left: 30px;
+       top: 150px;
+       width: 768px; height: 1280px;
+       font-size: 50px;
+       }
+   
+   #voltarSite{
+       position: absolute;
+       left: 822px;
+       top: 39px;
+   
+       font-size: 50px;
+   }
+   
+       body{
+           background-color: #0188C4;
+           transition: transform 0.5s ease;
+       }
+   
+   
+   
+   #youwin{
+       position: absolute;
+       left: 3px;  
+       top: 3px;  
+   
+           width: 768px; height: 1280px;
+   }
+   #youlose{
+       position: absolute;
+       left: 3px;  
+       top: 3px;  
+   
+           width: 768px; height: 1280px;
+   }
+   
+   #escolherTubarao{
+       position: inherit;
+       left: 453px;
+       top: 1039px;
+       width: 184px;
+       height: 141px;
+   }
+   #escolherGalo{
+       position: inherit;
+       left: 453px;
+       top:  697px;
+       width: 184px;
+       height: 141px;
+   }
+   
+   #escolherCaranguejo{
+       position: inherit;
+       left: 453px;
+       top: 388px;
+       width: 184px;
+       height: 141px;
+   }
+   
+   
+   #telaSeleçãoIMG{
+       left: 3px;  
+       top: 3px;  
+   
+           width: 768px; height: 1280px;
+   }
+   
+       #telaSeleção{
+          
+           position: absolute; 	
+       left: 3px;  
+       top: 3px;  
+   
+           width: 768px; height: 1280px;
+       }
+       
+   
+   #vidaBarraPlayer1 {
+       position: absolute;
+       left: 56px; 
+           top: 719px; 
+               width: 200px;
+               height: 20px;
+               background-color: green;
+               margin-top: 20px;
+           }
+           #vidaBarraPlayer2 {
+       position: absolute;
+       left: 541px; 
+           top: 719px; 
+               width: 200px;
+               height: 20px;
+               background-color: green;
+               margin-top: 20px;
+           }
+   
+   
+   /* ----------------------------------------------------------- */ 
+   .aninPL1atkPL2 {
+     -webkit-animation-name: aninPL1atkPL2a;
+     -webkit-animation-duration: 0.8s;
+     -webkit-animation-iteration-count: 1;
+   }
+   
+   @keyframes aninPL1atkPL2a {
+   0%   {left:50px; top:795px;}
+     50%  {left:350px; top:795px;}
+     100% {left:50px; top:795px;}
+   }
+    
+   
+   .aninPL2atkPL1 {
+     -webkit-animation-name: aninPL2atkPL1a;
+     -webkit-animation-duration: 0.8s;
+     -webkit-animation-iteration-count: 1;
+   }
+   
+   @keyframes aninPL2atkPL1a {
+   0%   {left:530px; top:795px;}
+     50%  {left:220px; top:795px;}
+     100% {left:530px; top:795px;}
+   } 
+   /* ----------------------------------------------------------- */ 
+   #missplayer1 {
+           position: absolute; 
+           left: 82px;  
+           top: 623px;  
+       
+           width: 220px; height: 220px;
+           } 
+   
+   
+   
+   #missplayer2 {
+           position: absolute; 
+           left: 572px; 
+           top: 630px; 
+       
+           width: 220px; height: 220px;
+           }
+   
+   
+   
+   
+   #numeroaleatorio {
+       position: absolute; 
+       left: 318px;  
+       top: 1131px;  
+       width: 70px; height: 70px; text-align: center; font-size: 50px;
+       color: #ffffff;
+       background-color:rgba(0, 0, 0, 0);
+       }
+   
+   
+   #danoacumuladoshow {
+       position: absolute; 
+       left: 618px;  
+       top: 1160px;  
+       width: 70px; height: 70px; text-align: center; font-size: 50px;
+       color: #ffffff;
+       background-color:rgba(0, 0, 0, 0);
+       }
+   
+   
+   
+   #vidaPlayer1show {
+       position: absolute; 
+       left: 174px;  
+       top: 762px;  
+       width: 70px; height: 70px; text-align: center; font-size: 50px;
+       color: #ffffff;
+       background-color:rgba(0, 0, 0, 0);
+       }
+   #vidaPlayer2show {
+       position: absolute; 
+       left: 527px;  
+       top: 766px;  
+       width: 70px; height: 70px; text-align: center; font-size: 50px;
+       color: #ffffff;
+       background-color:rgba(0, 0, 0, 0);
+       }
+   
+   
+   
+   
+    #rolar {
+           position: absolute; 
+           left: 32px;  
+           top: 1135px;  
+       
+           width: 140px; height: 140px;
+    }
+           #atacar {
+           position: absolute; 
+           left: 530px;  
+           top: 795px;  
+       
+           width: 220px; height: 220px;
+           background-color: Transparent;
+           }
+   
+   
+   #player1 {
+       position: absolute; 
+       left: 50px;  
+       top: 795px;  
+       -webkit-transform: scaleX(-1);/* inversão do personagem da direita*/
+       transform: scaleX(-1);/* inversão do personagem da direita*/
+       width: 220px; height: 220px;
+       }
+   
+       #player2 {
+           position: absolute; 
+           left: 530px;  
+           top: 795px;  
+       
+           width: 220px; height: 220px;
+           }
+   #background1 {
+       position: absolute; 	
+           left: 3px;  
+           top: 3px;  
+           Background-size:100%; 
+           background-attachment: fixed; 
+           background-repeat: no-repeat; 
+           background-position: center; 
+           width: 768px; height: 1280px; 
+       } 
+       #base {
+       position: absolute; 	
+       left: 3px;  
+       top: 3px;  
+           Background-size:100%; 
+           background-attachment: fixed; 
+           background-repeat: no-repeat; 
+           background-position: center; 
+           width: 768px; height: 1280px; 
+       } 

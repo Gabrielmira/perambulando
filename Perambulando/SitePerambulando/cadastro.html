@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PERAMBULANDO">
+    <title>PERAMBULANDO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <!-- a lupa na barra de pesquisa -->
+    <script src="https://kit.fontawesome.com/15c7c4106e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <h1>Formulário de Pesquisa</h1>
+
+    <form action="processar_formulario.php" method="POST">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
+    
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+    
+      <label for="comentario">O que a equipe Perambulando pode fazer por você?</label><br>
+      <textarea id="comentario" name="comentario" rows="5" cols="40" required></textarea><br><br>
+    
+      <input type="submit" value="Enviar">
+    </form>
+    
+
+
+
+</body>

@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #87B8CD;
+    font-size: 22px;
+}
+
+
+
+
+
+ /* isso é da animação */
+@keyframes animação {
+    from {
+        transform: scale(0.2) translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+header {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0188C4;
+}
+
+
+.menuSuperior  .dropdown:hover .menuDropdown,
+.dropdown:hover .menuDropdown {
+    display: block;
+}
+
+.menuSuperior {
+    
+    display: none; 
+    background-color: #87B8CD;
+    box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.menuSuperior ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.menuSuperior .dropdown {
+    display: block;
+}
+
+
+.menuSuperior li {
+    list-style: none;
+}
+
+.menuSuperior .dropdown a,
+.menuSuperior a {
+    color: #f1f1f1;
+    display: block;
+    font-size: 1.2em;
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.menuSuperior a:active,
+.menuSuperior a:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    color: black;
+    text-decoration: underline;
+}
+
+.menuSuperior .dropdown a:hover {
+    text-decoration: none;
+}
+
+
+.menuSuperior .menuDropdown {
+    display: none;
+    margin-right: 10px;
+    padding: 3px;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    min-width: fit-content;
+}
+
+.menuSuperior .menuDropdown a {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.apresentaçãoHeader {
+    
+    text-align: center;
+    width: fit-content;
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 1.2s linear 1s animação forwards;
+    
+}
+
+.apresentaçãoQmsomos{
+
+    padding-top: 30px;
+    text-align: left;
+
+
+
+
+
+}
+
+
+
+
+
+
+.apresentaçãoHeader figure figcaption {
+    font-size: 1.2em;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+
+
+.comments {
+    text-align: center;
+    min-height: 100vh;
+    margin-top: 50px;
+    padding: 1em;
+    background: linear-gradient(180deg, #87B8CD 0%, #87B8CD 46%, #1186C2 100%);
+}
+
+
+.contatoA h2,
+.destaques h1,
+.destaques2 h2,
+.comments h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+}
+
+
+.destaques,
+.destaques2 {
+    text-align: center;
+    min-height: 100vh;
+    padding: 1em;
+}
+
+.pricing-table .grid,
+.destaques2 .grid {
+    display: grid;
+    /* Define o espaçamento entre cada linha ou cada coluna */
+    gap: 2em;
+}
+
+
+    .destaques2 figure {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+
+.destaques2 figure img {
+    box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    height: 355px;
+    width: 250px;
+    object-fit: fill;
+    transition: transform 500ms;
+}
+
+.destaques2 figure img:hover {
+    transform: scale(.9);
+}
+
+.destaques2 figcaption {
+    text-align: start;
+    text-indent: 1em;
+    margin-top: 10px;
+}
+
+.contatoA {
+    text-align: center;
+    padding-top: 50px;
+    background-image: url('../images/backgrond-contato.png');
+     background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    padding: 180px;
+}
+
+.contatoA .icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.contatoA .icons a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2em;
+    transition: text-shadow 1s, color 1s;
+}
+
+.contatoA .icons a:active,
+.contatoA .icons a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, .5);
+}
+
+.comentarios {
+    text-align: center;
+    border-radius: 10px;
+    width: 66vw;
+    margin: 30px auto;
+}
+
+
+.comentarios p {
+    margin: 1em;
+    text-align: justify;
+    text-indent: 1em;
+}
+
+
+.menuSuperior {
+    display: block;
+}
+
+
+    .destaques2 .grid {
+        grid-template-columns: repeat(3, 240px);
+        align-content: center;
+        justify-content: center;
+    }
+
+.quemsomosTexto{
+    padding-top: 100px;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+
+
+   
+
+
+}
+
+
+.coluna{
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    text-align: center;
+
+
+
+}
+    
+
+
+@media screen and (max-width: 40%) {
+    .coluna{
+        width: 40%;
+        display: block;
+    }
+    
+}
+
+.card{
+ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container{
+    padding: 0 16px;
+    text-align: center;
+}
+
+.container::after, .tab::after{
+    content: "";
+    clear: both;
+    display: table
+
+}
+
+.titulo{
+    color: grey;
+    text-align: center;
+
+}
+
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.textoObj{
+    background-color: #0188C4;
+    font-family: 'Press Start 2P', cursive;
+
+
+}
+.textoSobre{
+    background-color: #0188C4;
+    font-family: 'Press Start 2P', cursive;
+
+
+}
+
+.textoContato{
+    text-align: center;
+    background-color: #0188C4;
+    font-family: 'Press Start 2P', cursive;
+
+
+}
